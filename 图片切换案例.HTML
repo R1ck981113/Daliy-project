@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+        }
+img{
+    width: 600px;
+    height: 400px;
+}
+a{
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+<div id="app">
+ <button>  <a href="#" @click="prev">上一张</a></button>
+   <img :src="imgArr[index]">
+  <button> <a href="#" @click="next">下一张</a></button>
+    </div>
+</div>
+
+
+
+
+
+    <!-- 开发环境版本VUE -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
+    </script>
+
+    <script>
+        // 创建VUE实例
+        var app =new Vue({
+    el:"#app",
+    data:{
+        imgArr:["1.jpg","2.jpg","3.jpg","4.jpg"],
+        index:0
+    },
+    methods:{
+        prev:function(){
+            this.index--
+        },
+        next:function(){
+            this.index++
+        },
+    }
+})
+    </script>
+</body>
+</html>
