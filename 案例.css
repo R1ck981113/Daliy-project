@@ -1,0 +1,25 @@
+/* 常用初始化样式 */
+body{
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",
+    STXihei,hei ;
+    color: #000;
+    background-color: #f2f2f2;
+    overflow-x: hidden ;
+    -webkit-tap-highlight-color: transparent;
+}
+/* 搜索模块 */
+.search-index{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    /* 固定盒子应该有宽度 */
+    width: 100%;
+    height: 44px;
+    transform: translateX(-50%);
+    min-width: 320px;
+    max-width: 540px;
+    background-color:grey;
+}

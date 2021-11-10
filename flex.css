@@ -1,0 +1,21 @@
+div{
+    display: flex;
+    width:80%;
+    height: 300px;
+    background-color:grey;
+    /* 换行操作 在FLEX里面是默认不换行的 */
+  flex-wrap: wrap ;
+  /* 默认主轴是X轴 */
+  justify-content: space-around;
+  /* 设置侧轴的排列方式 */
+  align-items: flex-start;
+
+}
+span{
+    background-color: #fff;
+    width: 150px;
+    height: 100px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
